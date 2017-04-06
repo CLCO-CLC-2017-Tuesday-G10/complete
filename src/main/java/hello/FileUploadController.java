@@ -32,17 +32,30 @@ public class FileUploadController {
     @RequestMapping("/")
     public String listUploadedFiles(Model model) throws IOException {
 
-//        model.addAttribute("files", storageService
-//                .loadAll()
-//                .map(path ->
-//                        MvcUriComponentsBuilder
-//                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
-//                                .build().toString())
-//                .collect(Collectors.toList()));
+        model.addAttribute("files", storageService
+                .loadAll()
+                .map(path ->
+                        MvcUriComponentsBuilder
+                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+                                .build().toString())
+                .collect(Collectors.toList()));
     	
-        return "jsp/example";
+        return "jsp/home";
     }
+    @GetMapping("/CALL_FOR_PAPERS")
+    public String showEditor(Model model) throws IOException {
 
+        model.addAttribute("files", storageService
+                .loadAll()
+                .map(path ->
+                        MvcUriComponentsBuilder
+                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+                                .build().toString())
+                .collect(Collectors.toList()));
+
+        //return "jsp/editor";       
+        return "jsp/CALL_FOR_PAPERS";
+    }
     @GetMapping("/files/{filename:.+}")
     @ResponseBody
     public ResponseEntity<Resource> serveFile(@PathVariable String filename) {

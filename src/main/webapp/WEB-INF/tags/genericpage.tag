@@ -436,7 +436,7 @@
 															</ul>
 														</div></li>
 													<li class="rmItem "><a
-														href="Default789b.html?ArticleId=fc8c1223-a9d2-46b5-9db3-665c778f0ac9"
+														href="/CALL_FOR_PAPERS"
 														class="rmLink rmRootLink"><span class="rmText">Call
 																for papers</span></a></li>
 													<li class="rmItem "><a
@@ -456,9 +456,13 @@
 														href="Portlets/MenuRad/index.html#"
 														class="rmLink rmRootLink"><span class="rmText">Venue
 																& Hotel</span></a></li>
-													<li class="rmItem rmLast"><a
+													<li class="rmItem "><a
 														href="Default84ba.html?ArticleId=b4031ebe-e802-4402-a49a-5769943872a5"
 														class="rmLink rmRootLink"><span class="rmText">Contact</span></a></li>
+													<li class="rmItem rmLast"><a
+														href="/edit"
+														class="rmLink rmRootLink"> <span class="rmText">edit</span>
+													</a></li>
 												</ul>
 												<input
 													id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu_ClientState"

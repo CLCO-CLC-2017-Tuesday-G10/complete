@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
-<t:templetepage>
+<t:genericpage>
 	<jsp:attribute name="header">     
     </jsp:attribute>
     <jsp:attribute name="footer">     
@@ -333,4 +333,4 @@
 					</tr>
 			</jsp:body>
 	
-</t:templetepage>
+</t:genericpage>
