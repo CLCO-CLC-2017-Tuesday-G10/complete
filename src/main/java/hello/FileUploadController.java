@@ -42,7 +42,7 @@ public class FileUploadController {
     	
         return "jsp/home";
     }
-    @GetMapping("/CALL_FOR_PAPERS")
+    @GetMapping("/edit")
     public String showEditor(Model model) throws IOException {
 
         model.addAttribute("files", storageService
@@ -53,8 +53,8 @@ public class FileUploadController {
                                 .build().toString())
                 .collect(Collectors.toList()));
 
-        //return "jsp/editor";       
-        return "jsp/CALL_FOR_PAPERS";
+        return "jsp/editor";       
+       // return "jsp/CALL_FOR_PAPERS";
     }
     @GetMapping("/files/{filename:.+}")
     @ResponseBody

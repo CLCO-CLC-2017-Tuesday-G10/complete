@@ -457,7 +457,7 @@
 														class="rmLink rmRootLink"><span class="rmText">Venue
 																& Hotel</span></a></li>
 													<li class="rmItem "><a
-														href="Default84ba.html?ArticleId=b4031ebe-e802-4402-a49a-5769943872a5"
+														href="#"
 														class="rmLink rmRootLink"><span class="rmText">Contact</span></a></li>
 													<li class="rmItem rmLast"><a
 														href="/edit"
