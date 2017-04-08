@@ -436,28 +436,28 @@
 															</ul>
 														</div></li>
 													<li class="rmItem "><a
-														href="/CALL_FOR_PAPERS"
+														href="callforpapers"
 														class="rmLink rmRootLink"><span class="rmText">Call
 																for papers</span></a></li>
 													<li class="rmItem "><a
-														href="Defaultd478.html?ArticleId=945864b5-165f-45a3-8e75-a9ba5ac1f9ef"
+														href="submission"
 														class="rmLink rmRootLink"><span class="rmText">Submission</span></a></li>
 													<li class="rmItem "><a
-														href="Defaulta8ef.html?ArticleId=707e0e24-5220-4821-a40f-4041eb76cc1a"
+														href="registration"
 														class="rmLink rmRootLink"><span class="rmText">Registration</span></a></li>
 													<li class="rmItem "><a
-														href="Default6b73.html?ArticleId=be204435-0615-4fc3-aa86-392d871decc8"
+														href="keynotespeakers"
 														class="rmLink rmRootLink"><span class="rmText">Keynote
 																Speakers</span></a></li>
 													<li class="rmItem "><a
-														href="Portlets/MenuRad/index.html#"
+														href="program"
 														class="rmLink rmRootLink"><span class="rmText">Program</span></a></li>
 													<li class="rmItem "><a
-														href="Portlets/MenuRad/index.html#"
+														href="venue&hotel"
 														class="rmLink rmRootLink"><span class="rmText">Venue
 																& Hotel</span></a></li>
 													<li class="rmItem "><a
-														href="#"
+														href="/contact"
 														class="rmLink rmRootLink"><span class="rmText">Contact</span></a></li>
 													<li class="rmItem rmLast"><a
 														href="/edit"

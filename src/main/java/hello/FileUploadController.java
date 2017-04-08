@@ -42,6 +42,104 @@ public class FileUploadController {
     	
         return "jsp/home";
     }
+    @GetMapping("/about")
+    public String showAbout(Model model) throws IOException {
+
+        model.addAttribute("files", storageService
+                .loadAll()
+                .map(path ->
+                        MvcUriComponentsBuilder
+                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+                                .build().toString())
+                .collect(Collectors.toList()));
+
+        return "jsp/about";       
+       // return "jsp/CALL_FOR_PAPERS";
+    }
+    @GetMapping("/callforpapers")
+    public String showCallforpapers(Model model) throws IOException {
+
+        model.addAttribute("files", storageService
+                .loadAll()
+                .map(path ->
+                        MvcUriComponentsBuilder
+                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+                                .build().toString())
+                .collect(Collectors.toList()));
+
+        return "jsp/callforpapers";       
+       // return "jsp/CALL_FOR_PAPERS";
+    }
+    @GetMapping("/submission")
+    public String showSubmission(Model model) throws IOException {
+
+        model.addAttribute("files", storageService
+                .loadAll()
+                .map(path ->
+                        MvcUriComponentsBuilder
+                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+                                .build().toString())
+                .collect(Collectors.toList()));
+
+        return "jsp/submission";       
+       // return "jsp/CALL_FOR_PAPERS";
+    }
+    @GetMapping("/registration")
+    public String showRegistration(Model model) throws IOException {
+
+        model.addAttribute("files", storageService
+                .loadAll()
+                .map(path ->
+                        MvcUriComponentsBuilder
+                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+                                .build().toString())
+                .collect(Collectors.toList()));
+
+        return "jsp/registration";       
+       // return "jsp/CALL_FOR_PAPERS";
+    }
+    @GetMapping("/keynotespeakers")
+    public String showKeynotespeakers(Model model) throws IOException {
+
+        model.addAttribute("files", storageService
+                .loadAll()
+                .map(path ->
+                        MvcUriComponentsBuilder
+                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+                                .build().toString())
+                .collect(Collectors.toList()));
+
+        return "jsp/keynotespeakers";       
+       // return "jsp/CALL_FOR_PAPERS";
+    }
+    @GetMapping("/program")
+    public String showProgram(Model model) throws IOException {
+
+        model.addAttribute("files", storageService
+                .loadAll()
+                .map(path ->
+                        MvcUriComponentsBuilder
+                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+                                .build().toString())
+                .collect(Collectors.toList()));
+
+        return "jsp/program";       
+       // return "jsp/CALL_FOR_PAPERS";
+    }
+    @GetMapping("/venue&hotel")
+    public String showVenuehotel(Model model) throws IOException {
+
+        model.addAttribute("files", storageService
+                .loadAll()
+                .map(path ->
+                        MvcUriComponentsBuilder
+                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+                                .build().toString())
+                .collect(Collectors.toList()));
+
+        return "jsp/venue&hotel";       
+       // return "jsp/CALL_FOR_PAPERS";
+    }
     @GetMapping("/edit")
     public String showEditor(Model model) throws IOException {
 
@@ -54,6 +152,20 @@ public class FileUploadController {
                 .collect(Collectors.toList()));
 
         return "jsp/editor";       
+       // return "jsp/CALL_FOR_PAPERS";
+    }
+    @GetMapping("/contact")
+    public String showcontac(Model model) throws IOException {
+
+        model.addAttribute("files", storageService
+                .loadAll()
+                .map(path ->
+                        MvcUriComponentsBuilder
+                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
+                                .build().toString())
+                .collect(Collectors.toList()));
+
+        return "jsp/contact";       
        // return "jsp/CALL_FOR_PAPERS";
     }
     @GetMapping("/files/{filename:.+}")
